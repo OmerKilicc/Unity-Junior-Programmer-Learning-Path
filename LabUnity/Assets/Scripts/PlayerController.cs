@@ -13,8 +13,8 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
 
-    private float zBound = 18;
-    private bool isGround = true;
+    private float zBound = 15;
+
 
     // Start is called before the first frame update
     void Start()
@@ -35,11 +35,6 @@ public class PlayerController : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
         rb.AddForce(Vector3.forward * speed * verticalInput);
         rb.AddForce(Vector3.right * speed * horizontalInput);
-        if (Input.GetKeyDown(KeyCode.Space) && isGround)
-        {
-            rb.AddForce(Vector3.up * speed);
-            isGround = false;
-        }
     }
 
     private void Boundry()
@@ -58,9 +53,17 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Ground"))
+        if (other.gameObject.CompareTag("Enemy"))
         {
-            isGround = true;
+            Debug.Log("Player has collided with enemy");
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Powerup"))
+        {
+            Destroy(other.gameObject);
         }
     }
 }
