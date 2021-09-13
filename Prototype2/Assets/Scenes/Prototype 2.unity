@@ -471,6 +471,7 @@ GameObject:
   m_Component:
   - component: {fileID: 848158991}
   - component: {fileID: 848158992}
+  - component: {fileID: 848158993}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -508,6 +509,21 @@ MonoBehaviour:
   - {fileID: 7124200493645928083, guid: 54545ee994acb6b4bace5bff11fcd907, type: 3}
   - {fileID: 1926576532177066618, guid: a48b804f7babbd94f9535c4b25e6b6ef, type: 3}
   - {fileID: 2478235641507349885, guid: 18b4391a0f1c5164b89c9cc234336628, type: 3}
+--- !u!114 &848158993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848158990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c0e1f24e2ce4a5b9bf1f3a7499cd45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObjects: []
+  objectToPool: {fileID: 8381422385252319275, guid: 4d3bb7eed7cda024294bdceb991f3664, type: 3}
+  amountToPool: 20
 --- !u!1 &992285705
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,5 +701,24 @@ PrefabInstance:
       propertyPath: xRange
       value: 15
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1845385849, guid: 0e1316a3e46fdb349b6ff648610a1d71, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e1316a3e46fdb349b6ff648610a1d71, type: 3}
+--- !u!1 &1845385848 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100046, guid: 0e1316a3e46fdb349b6ff648610a1d71, type: 3}
+  m_PrefabInstance: {fileID: 1845385847}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1845385849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845385848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e917c52987daa41af6a0305d9813c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 8381422385252319275, guid: 4d3bb7eed7cda024294bdceb991f3664, type: 3}

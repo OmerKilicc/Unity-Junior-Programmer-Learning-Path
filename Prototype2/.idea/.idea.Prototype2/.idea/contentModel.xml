@@ -22,8 +22,9 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="DestroyOutOfBounds.cs" t="Include" />
-          <e p="DetectCollision.cs" t="Include" />
+          <e p="DetectCollisions.cs" t="Include" />
           <e p="moveForward.cs" t="Include" />
+          <e p="ObjectPooler.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="SpawnManager.cs" t="Include" />
         </e>
