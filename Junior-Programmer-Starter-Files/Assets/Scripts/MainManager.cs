@@ -8,7 +8,7 @@ public class MainManager : MonoBehaviour
     // Start() and Update() methods deleted - we don't need them right now
  // This code enables you to access the MainManager object from any other script.  
 
-    public static MainManager Instance;
+    public static MainManager Instance { get; private set; }
     public Color TeamColor;
     private void Awake()
     {

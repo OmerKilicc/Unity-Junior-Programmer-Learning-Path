@@ -24,6 +24,7 @@
           </e>
           <e p="MainManager.cs" t="Include" />
           <e p="MenuUIHandler.cs" t="Include" />
+          <e p="ProductivityUnit.cs" t="Include" />
           <e p="ResourcePile.cs" t="Include" />
           <e p="TransporterUnit.cs" t="Include" />
           <e p="UI" t="Include">
